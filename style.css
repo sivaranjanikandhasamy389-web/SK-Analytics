@@ -1,0 +1,398 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#1e293b;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.hero{
+    background:linear-gradient(to right,#0f172a,#1e293b);
+    color:white;
+    padding:120px 8%;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:20px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.card:hover{
+    transform:translateY(-6px)
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.contact button{
+    padding:12px;
+    background:#0f172a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+.logo-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.logo-grid img{
+    width:80px;
+    transition:0.3s;
+}
+
+.logo-grid img:hover{
+    transform:scale(1.1);
+}
+/* Section Background Variations */
+
+.bg-light {
+    background-color: #f8fafc;
+}
+
+.bg-blue {
+    background: linear-gradient(to right, #e0f2fe, #f0f9ff);
+}
+
+.bg-dark {
+    background: #0f172a;
+    color: white;
+}
+
+.bg-dark h2,
+.bg-dark p {
+    color: white;
+}
+.wave {
+    line-height: 0;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+/* Pricing Section */
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.pricing-card{
+    background:white;
+    padding:40px 30px;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.3s ease;
+}
+
+.pricing-card:hover{
+    transform:translateY(-10px);
+}
+
+.pricing-card h3{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+.pricing-card ul{
+    list-style:none;
+    margin-bottom:25px;
+}
+
+.pricing-card ul li{
+    margin:10px 0;
+}
+
+.popular{
+    border:2px solid #38bdf8;
+    transform:scale(1.05);
+}
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+/* Portfolio Gallery */
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.portfolio-item{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.portfolio-item:hover{
+    transform:translateY(-10px);
+}
+
+.portfolio-item img{
+    width:100%;
+    display:block;
+}
+
+.portfolio-content{
+    padding:20px;
+}
+
+.portfolio-content h3{
+    margin-bottom:10px;
+}
+
+.portfolio-content p{
+    font-size:14px;
+    margin-bottom:8px;
+}
+.portfolio-item img{
+    transition:0.4s ease;
+}
+
+.portfolio-item:hover img{
+    transform:scale(1.05);
+}
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+}
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    font-size: 24px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+.contact button {
+    padding: 12px;
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.contact button:hover {
+    transform: translateY(-3px);
+}
+/* Section Background Variations */
+
+.bg-light {
+    background-color: #f8fafc;
+}
+
+.bg-soft {
+    background: linear-gradient(to right, #eef2ff, #f1f5f9);
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+.bg-gradient h1,
+.bg-gradient h2,
+.bg-gradient p {
+    color: white;
+}
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+/* Clean Highlighted Box */
+
+.portfolio-highlight {
+    background: #dbe960;
+    padding: 35px 8%;
+    margin: 50px 8%;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.portfolio-highlight p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.portfolio-highlight a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.portfolio-highlight a:hover {
+    border-bottom: 2px solid #38bdf8;
+}
+/* Contact Hero Section */
+
+.contact-hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 100px 8%;
+    text-align: center;
+    color: white;
+}
+
+.contact-hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 16px;
+    color: #cbd5e1;
+}
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 26px;
+    }
+}
+.style-bg{
+    color: #2563eb;
+    background-color: rgb(128, 166, 232);
+    padding: 50px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
